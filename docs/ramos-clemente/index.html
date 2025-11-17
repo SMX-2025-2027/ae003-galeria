@@ -1,0 +1,180 @@
+<!-- Copieu el contingut de la vostra plantilla HTML acabada aquí per publicar-la amb GitHub Pages -->
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8" />
+  <title>AE-003 · Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1><table>
+    <tr>
+        <td>Bloc</td>
+        <td>Dada</td>
+    </tr>
+    <tr>
+        <td>**Caixa**</td>
+        <td>formato pequeño, 12.45 x 3.85&quot;</td>
+    </tr>
+    <tr>
+        <td>**Placa base**</td>
+        <td>dell , modelo DCCY , xipset: intel , socket: desconocido formato: Ultra Small Form Factor , bios: tradicional (legacy) SATA: tiene 1 y esta usando un disco duro seagate de 250 GB y el estado es: sucio pero en bastante buen estado</td>
+    </tr>
+    <tr>
+        <td>**CPU**</td>
+        <td>intel core 2 duo 2 nucleos y 2 hilos , 2.66hz base , tdp desconocido</td>
+    </tr>
+    <tr>
+        <td>**RAM**</td>
+        <td>capacidad 215 MB , DDR 2 , 667MHz , bancos ocupados 1 y soporta hasta 4.</td>
+    </tr>
+    <tr>
+        <td>**Emmagatzematge**</td>
+        <td>Disc dur SATA , 250GB.</td>
+    </tr>
+    <tr>
+        <td>**Gràfics**</td>
+        <td>gráficos integrados en la placa base: Intel GMA 3100, modelo GMA 3100 , salidas: VGA , puerto LPT , 6x USB , salida de audio y de cascos.</td>
+    </tr>
+    <tr>
+        <td>**Alimentació (PSU)**</td>
+        <td>marca: dell model: H275E-00 , potencia 275W , no certificada +80 conectores libres 24‑pines ATX (P1), 4‑pines +12 V (P2), SATA, 4‑pines óptica</td>
+    </tr>
+    <tr>
+        <td>**Refrigeració**</td>
+        <td>ventilador y coolers de cpu un ventilador en el disco duro y otros dos en la fuente de alimentación y en el cooler del cpu. , el flujo del aire: entra por adelante por las rejillas frontales y sale por el ventilador trasero.</td>
+    </tr>
+    <tr>
+        <td>**Connectivitat**</td>
+        <td>usb: 6x tipo a , salidas de audio para altavoces , un conector ethernet rj45 , lector de CD.</td>
+    </tr>
+    <tr>
+        <td>**Expansió**</td>
+        <td>no hay expansions, pero tiene conectores pci para una tarjeta de sonido por ejemplo (que es lo que le cupiria)</td>
+    </tr>
+    <tr>
+        <td>**Manteniment**</td>
+        <td>La ultima limpieza se hizo hace ya tiempo tiene algo de polvo y el cableado no está muy organizado.</td>
+    </tr>
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galería (fotos)</title>
+  <style>
+    :root{
+      --gap: 16px;
+      --max-width: 1000px;
+    }
+    body{
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      line-height: 1.4;
+      padding: 24px;
+      display: flex;
+      justify-content: center;
+      background:#f7f7f8;
+      color:#111;
+    }
+    .container{
+      width: 100%;
+      max-width: var(--max-width);
+    }
+    h1{
+      margin: 0 0 16px 0;
+      font-size: 1.5rem;
+    }
+    .gallery{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--gap);
+      align-items: start;
+    }
+    figure{
+      margin: 0;
+      background: #fff;
+      border-radius: 8px;
+      padding: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    figure img{
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      object-fit: cover;
+      display: block;
+    }
+    figcaption{
+      font-size: 0.95rem;
+      color: #333;
+    }
+    .filename{
+      font-family: monospace;
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 6px;
+      word-break: break-all;
+    }
+@media (prefers-color-scheme: dark){
+  body{
+    background: #ffffff;
+    color: #000000;
+  }
+  figure{
+    background: #ffffff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .filename{
+    color: #000000;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Galería (fotos)</h1>
+
+    <section class="gallery" aria-label="Galería de imágenes del ordenador">
+      <figure>
+        <img src="fotos-frontal.jpg" alt="imagen frontal del ordenador" loading="lazy">
+        <figcaption>Frontal</figcaption>
+        <div class="filename">fotos-frontal.jpg</div>
+      </figure>
+
+      <figure>
+        <img src="fotos-posterior.jpg" alt="imagen posterior del ordenador (puertos)" loading="lazy">
+        <figcaption>Posterior (ports)</figcaption>
+        <div class="filename">fotos-posterior.jpg</div>
+      </figure>
+
+      <figure>
+        <img src="fotos-interior.jpg" alt="imagen interior del ordenador" loading="lazy">
+        <figcaption>Interior</figcaption>
+        <div class="filename">fotos-interior.jpg</div>
+      </figure>
+
+      <figure>
+        <img src="fotos-psu.jpg" alt="imagen de la etiqueta PSU de la fuente de alimentación" loading="lazy">
+        <figcaption>Etiqueta PSU</figcaption>
+        <div class="filename">fotos-psu.jpg</div>
+      </figure>
+
+      <figure>
+        <img src="fotos-detalls-ports.jpg" alt="imagen de los puertos de la placa base del ordenador" loading="lazy">
+        <figcaption>Detalle puertos / ranuras</figcaption>
+        <div class="filename">fotos-detalls-ports.jpg</div>
+      </figure>
+    </section>
+  </div>
+</body>
+</html>
+
+</table></h1>
+  <p>Per publicar a GitHub Pages: Settings → Pages → Branch `main` → `/docs`.</p>
+</body>
+</html>
